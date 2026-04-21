@@ -7,7 +7,7 @@ An interactive, stateful Todo Card built with **HTML, CSS, and Vanilla JavaScrip
 ## Live Demo
 
 👉 *(Add your deployed link here)*
-👉 *(Add your GitHub repo link here)*
+👉 *(https://github.com/Owaboye/advanced_todo_card_-stage_1a-.git)*
 
 ---
 
