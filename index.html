@@ -9,8 +9,8 @@
 <body>
     <article data-testid="test-todo-card">
 
-     
-        <span 
+     <div class="top-row">
+          <span 
             data-testid="test-todo-priority"  
             aria-label="High priority task"
             class="priority-badge priority-high"
@@ -20,11 +20,25 @@
             <strong data-priority="high" data-testid="test-todo-priority-indicator" class="priority-indicator"></strong>
         </span>
 
+         <span id="taskStatus" data-testid="test-todo-status" class="status-badge status-pending">
+            Pending
+        </span>
+    </div>
+        <!-- <span 
+            data-testid="test-todo-priority"  
+            aria-label="High priority task"
+            class="priority-badge priority-high"
+            id="taskPriority"
+            >
+            High 
+            <strong data-priority="high" data-testid="test-todo-priority-indicator" class="priority-indicator"></strong>
+        </span> -->
+
         <input 
           type="checkbox" 
           id='complete'
           data-testid="test-todo-complete-toggle"/>
-        <label for="complete">Mark as complete</label> 
+        <label class="complete-label" for="complete">Mark as complete</label> 
 
         <h2 id="todoTitle" data-testid="test-todo-title">Build and deploy Todo Card Component</h2>
 
@@ -55,9 +69,9 @@
             </div>
         </div>
 
-         <span id="taskStatus" data-testid="test-todo-status" class="status-badge status-pending">
+         <!-- <span id="taskStatus" data-testid="test-todo-status" class="status-badge status-pending">
             Pending
-        </span>
+        </span> -->
 
         <!-- Status Control --> 
         <label for="statusControl">Status</label>

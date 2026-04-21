@@ -4,6 +4,129 @@
   --high: #ef4444;
   --done-opacity: 0.6;
 }
+/* Beginning of CSS */
+/* GLOBAL SAFETY */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+}
+
+/* CARD */
+article {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px;
+}
+
+/* PREVENT OVERFLOW */
+h2, p, li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* DESCRIPTION SAFETY */
+#description {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+/* BUTTON WRAP */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* TAG WRAP */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* MOBILE DEFAULT */
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wraper-time-with-overdue-indicator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* select,
+input,
+textarea,
+button {
+  width: 100%;
+} */
+
+@media (min-width: 768px) {
+  article {
+    max-width: 600px;
+  }
+
+  .date-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+h2 {
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+/* COLLAPSIBLE SAFETY */
+[data-testid="test-todo-collapsible-section"] {
+  overflow: hidden;
+}
+
+.collapsed {
+  max-height: 80px;
+}
+
+.expanded {
+  max-height: none;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+
+
+/* End of CSS added */
 
 body{
     display: flex;
@@ -98,6 +221,10 @@ h2 {
 
 #complete {
   margin-right: 8px;
+}
+
+.complete-label{
+  display: inline-block;
 }
 
 button {
@@ -272,5 +399,7 @@ article.overdue {
 article.in-progress {
   border-left: 5px solid orange;
 }
+
+
 
 
